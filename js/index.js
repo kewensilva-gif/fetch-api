@@ -2,6 +2,9 @@ const url = "https://jsonplaceholder.typicode.com/posts";
 
 const loadingElement = document.querySelector("#loading");
 const postsContainer = document.querySelector("#posts-container");
+const postPage = document.querySelector("#post");
+const postContainer = document.querySelector("#post-container");
+const commentsContainer = document.querySelector("#comments-container");
 
 //Get id from URL
 const params = new URLSearchParams(window.location.search);
@@ -43,6 +46,13 @@ async function getAllPosts() {
         //Inserindo a div criada na div posts container
         postsContainer.appendChild(div);
     })
+}
+
+// Get individual post
+async function getPost(id){
+
+
+
 }
 
 if(!postId)
